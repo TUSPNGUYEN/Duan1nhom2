@@ -44,14 +44,17 @@
             lblquyen = new Label();
             label1 = new Label();
             panel_body = new Panel();
+            pictureBox2 = new PictureBox();
             panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel_left
             // 
             panel_left.BackColor = Color.Coral;
+            panel_left.Controls.Add(pictureBox2);
             panel_left.Controls.Add(btn_thietlap);
             panel_left.Controls.Add(btn_khachhang);
             panel_left.Controls.Add(btn_nhanvien);
@@ -63,9 +66,8 @@
             panel_left.Controls.Add(btn_sanpham);
             panel_left.Dock = DockStyle.Left;
             panel_left.Location = new Point(0, 0);
-            panel_left.Margin = new Padding(3, 2, 3, 2);
             panel_left.Name = "panel_left";
-            panel_left.Size = new Size(180, 770);
+            panel_left.Size = new Size(206, 1027);
             panel_left.TabIndex = 0;
             // 
             // btn_thietlap
@@ -77,10 +79,9 @@
             btn_thietlap.ForeColor = SystemColors.Control;
             btn_thietlap.Image = PRL.Properties.Resources.banhxe;
             btn_thietlap.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_thietlap.Location = new Point(0, 711);
-            btn_thietlap.Margin = new Padding(3, 2, 3, 2);
+            btn_thietlap.Location = new Point(0, 948);
             btn_thietlap.Name = "btn_thietlap";
-            btn_thietlap.Size = new Size(180, 39);
+            btn_thietlap.Size = new Size(206, 52);
             btn_thietlap.TabIndex = 7;
             btn_thietlap.Text = "Đăng Xuất";
             btn_thietlap.UseVisualStyleBackColor = false;
@@ -95,10 +96,9 @@
             btn_khachhang.ForeColor = SystemColors.Control;
             btn_khachhang.Image = PRL.Properties.Resources.multiple_users_silhouette;
             btn_khachhang.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_khachhang.Location = new Point(0, 433);
-            btn_khachhang.Margin = new Padding(3, 2, 3, 2);
+            btn_khachhang.Location = new Point(0, 577);
             btn_khachhang.Name = "btn_khachhang";
-            btn_khachhang.Size = new Size(180, 58);
+            btn_khachhang.Size = new Size(206, 77);
             btn_khachhang.TabIndex = 6;
             btn_khachhang.Text = "Khách Hàng";
             btn_khachhang.UseVisualStyleBackColor = false;
@@ -113,10 +113,9 @@
             btn_nhanvien.ForeColor = SystemColors.Control;
             btn_nhanvien.Image = PRL.Properties.Resources.user__1_;
             btn_nhanvien.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_nhanvien.Location = new Point(0, 381);
-            btn_nhanvien.Margin = new Padding(3, 2, 3, 2);
+            btn_nhanvien.Location = new Point(0, 508);
             btn_nhanvien.Name = "btn_nhanvien";
-            btn_nhanvien.Size = new Size(180, 58);
+            btn_nhanvien.Size = new Size(206, 77);
             btn_nhanvien.TabIndex = 5;
             btn_nhanvien.Text = "Nhân Viên";
             btn_nhanvien.UseVisualStyleBackColor = false;
@@ -131,10 +130,9 @@
             btn_voucher.ForeColor = SystemColors.Control;
             btn_voucher.Image = PRL.Properties.Resources.discount;
             btn_voucher.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_voucher.Location = new Point(0, 280);
-            btn_voucher.Margin = new Padding(3, 2, 3, 2);
+            btn_voucher.Location = new Point(0, 373);
             btn_voucher.Name = "btn_voucher";
-            btn_voucher.Size = new Size(180, 58);
+            btn_voucher.Size = new Size(206, 77);
             btn_voucher.TabIndex = 3;
             btn_voucher.Text = "Voucher";
             btn_voucher.UseVisualStyleBackColor = false;
@@ -145,8 +143,9 @@
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(180, 120);
+            pictureBox1.Size = new Size(206, 160);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -160,10 +159,9 @@
             btn_thongke.ForeColor = SystemColors.Control;
             btn_thongke.Image = PRL.Properties.Resources.icons8_sales_50;
             btn_thongke.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_thongke.Location = new Point(0, 336);
-            btn_thongke.Margin = new Padding(3, 2, 3, 2);
+            btn_thongke.Location = new Point(0, 448);
             btn_thongke.Name = "btn_thongke";
-            btn_thongke.Size = new Size(180, 50);
+            btn_thongke.Size = new Size(206, 67);
             btn_thongke.TabIndex = 4;
             btn_thongke.Text = "Thông Kê";
             btn_thongke.UseVisualStyleBackColor = false;
@@ -178,10 +176,9 @@
             btn_hoadon.ForeColor = SystemColors.Control;
             btn_hoadon.Image = PRL.Properties.Resources.bill;
             btn_hoadon.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_hoadon.Location = new Point(0, 168);
-            btn_hoadon.Margin = new Padding(3, 2, 3, 2);
+            btn_hoadon.Location = new Point(0, 224);
             btn_hoadon.Name = "btn_hoadon";
-            btn_hoadon.Size = new Size(180, 58);
+            btn_hoadon.Size = new Size(206, 77);
             btn_hoadon.TabIndex = 1;
             btn_hoadon.Text = "Hóa Đơn";
             btn_hoadon.UseVisualStyleBackColor = false;
@@ -196,10 +193,9 @@
             btn_banhang.ForeColor = SystemColors.Control;
             btn_banhang.Image = (Image)resources.GetObject("btn_banhang.Image");
             btn_banhang.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_banhang.Location = new Point(0, 120);
-            btn_banhang.Margin = new Padding(3, 2, 3, 2);
+            btn_banhang.Location = new Point(0, 160);
             btn_banhang.Name = "btn_banhang";
-            btn_banhang.Size = new Size(180, 48);
+            btn_banhang.Size = new Size(206, 64);
             btn_banhang.TabIndex = 0;
             btn_banhang.Text = "Bán Hàng";
             btn_banhang.UseVisualStyleBackColor = false;
@@ -214,10 +210,9 @@
             btn_sanpham.ForeColor = SystemColors.Control;
             btn_sanpham.Image = PRL.Properties.Resources.package;
             btn_sanpham.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_sanpham.Location = new Point(0, 230);
-            btn_sanpham.Margin = new Padding(3, 2, 3, 2);
+            btn_sanpham.Location = new Point(0, 307);
             btn_sanpham.Name = "btn_sanpham";
-            btn_sanpham.Size = new Size(180, 58);
+            btn_sanpham.Size = new Size(206, 77);
             btn_sanpham.TabIndex = 2;
             btn_sanpham.Text = "Sản Phẩm";
             btn_sanpham.UseVisualStyleBackColor = false;
@@ -230,10 +225,9 @@
             panel_top.Controls.Add(lblquyen);
             panel_top.Controls.Add(label1);
             panel_top.Dock = DockStyle.Top;
-            panel_top.Location = new Point(180, 0);
-            panel_top.Margin = new Padding(3, 2, 3, 2);
+            panel_top.Location = new Point(206, 0);
             panel_top.Name = "panel_top";
-            panel_top.Size = new Size(1089, 120);
+            panel_top.Size = new Size(1244, 160);
             panel_top.TabIndex = 1;
             // 
             // lblten
@@ -242,9 +236,9 @@
             lblten.BackColor = Color.Black;
             lblten.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblten.ForeColor = SystemColors.Control;
-            lblten.Location = new Point(536, 27);
+            lblten.Location = new Point(613, 36);
             lblten.Name = "lblten";
-            lblten.Size = new Size(36, 20);
+            lblten.Size = new Size(47, 25);
             lblten.TabIndex = 13;
             lblten.Text = "Tên";
             // 
@@ -254,9 +248,9 @@
             lblquyen.BackColor = Color.Black;
             lblquyen.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblquyen.ForeColor = SystemColors.Control;
-            lblquyen.Location = new Point(260, 28);
+            lblquyen.Location = new Point(297, 37);
             lblquyen.Name = "lblquyen";
-            lblquyen.Size = new Size(55, 20);
+            lblquyen.Size = new Size(71, 25);
             lblquyen.TabIndex = 12;
             lblquyen.Text = "Quyền";
             // 
@@ -266,9 +260,9 @@
             label1.BackColor = Color.Black;
             label1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(25, 27);
+            label1.Location = new Point(29, 36);
             label1.Name = "label1";
-            label1.Size = new Size(57, 21);
+            label1.Size = new Size(70, 28);
             label1.TabIndex = 0;
             label1.Text = "Home";
             // 
@@ -278,24 +272,33 @@
             panel_body.BackgroundImage = (Image)resources.GetObject("panel_body.BackgroundImage");
             panel_body.BackgroundImageLayout = ImageLayout.Stretch;
             panel_body.Dock = DockStyle.Fill;
-            panel_body.Location = new Point(180, 120);
-            panel_body.Margin = new Padding(3, 2, 3, 2);
+            panel_body.Location = new Point(206, 160);
             panel_body.Name = "panel_body";
-            panel_body.Size = new Size(1089, 650);
+            panel_body.Size = new Size(1244, 867);
             panel_body.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(206, 160);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 14;
+            pictureBox2.TabStop = false;
             // 
             // home
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1269, 770);
+            ClientSize = new Size(1450, 1027);
             Controls.Add(panel_body);
             Controls.Add(panel_top);
             Controls.Add(panel_left);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
             Name = "home";
             Text = "home";
             FormClosed += home_FormClosed;
@@ -303,6 +306,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel_top.ResumeLayout(false);
             panel_top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -324,5 +328,6 @@
         private Label lblten;
         private Label lblquyen;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
